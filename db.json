@@ -1,0 +1,145 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "123456789",
+      "id": 6
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "123456789",
+      "id": 7
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "123456789",
+      "id": 8
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "khk",
+      "id": 9
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "khk",
+      "id": 10
+    },
+    {
+      "firstName": "htfh",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "khk",
+      "id": 11
+    },
+    {
+      "firstName": "htfh",
+      "lastName": "p",
+      "email": "sandhya@gmail.com",
+      "password": "khk",
+      "id": 12
+    },
+    {
+      "firstName": "syam",
+      "lastName": "syam",
+      "email": "syam@innominds.com",
+      "password": "12345",
+      "id": 13
+    },
+    {
+      "firstName": "saroj",
+      "lastName": "s",
+      "email": "saroj@innominds.com",
+      "password": "123456",
+      "id": 14
+    },
+    {
+      "firstName": "syam",
+      "lastName": "syam",
+      "email": "syam@innominds.com",
+      "password": "1234567",
+      "id": 15
+    },
+    {
+      "firstName": "syam",
+      "lastName": "syam",
+      "email": "syam@innominds.com",
+      "password": "1234567",
+      "id": 16
+    },
+    {
+      "firstName": "hareesh",
+      "lastName": "s",
+      "email": "hareesh@innominds.com",
+      "password": "1234567",
+      "id": 17
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@innominds.com",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "firstName": "sandhya",
+      "lastName": "p",
+      "email": "sandhya@innnominds.ds",
+      "password": "123456",
+      "id": 19
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

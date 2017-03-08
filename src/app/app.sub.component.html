@@ -1,0 +1,59 @@
+<!--<h2>{{child}}</h2>
+<span>good morning to all</span>-->
+<div>
+ <h2 *ngIf="isTrue" style="color:red" class="col-sm-offset-3">Already exist with this Email</h2>
+ <h2 class="col-sm-offset-6">Register</h2>
+<form #heroForm="ngForm">
+    <div class="row form-group">
+        <div class="col-sm-3 col-sm-offset-3 text-right"><label> FirstName</label></div>
+        <div class="col-sm-3 "><input type="text" class="form-control" id="fName" name="firstName" #fName="ngModel" [(ngModel)]="user.firstName"
+                required></div>
+    </div>
+    <div [hidden]="fName.valid || fName.pristine" class="alert alert-danger col-sm-offset-6 col-sm-3">
+        FirstName is required
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-3 col-sm-offset-3  text-right"> <label>LastName</label></div>
+        <div class="col-sm-3  "><input type="text" class="form-control" [(ngModel)]="user.lastName" id="lName" name="lastName" #lName="ngModel" required></div>
+    </div>
+    <div [hidden]="lName.valid || lName.pristine" class="alert alert-danger col-sm-offset-6 col-sm-3">
+        LastName is required
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-3 col-sm-offset-3  text-right"><label> Email</label>
+        </div>
+        <div class="col-sm-3 "><input type="Email" class="form-control" id="email" [(ngModel)]="user.email" name="email" #email="ngModel" required></div>
+    </div>
+    <div [hidden]="email.valid || email.pristine" class="alert alert-danger col-sm-offset-6 col-sm-3">
+        Email is required
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-3 col-sm-offset-3  text-right"><label> Password</label></div>
+        <div class="col-sm-3  "><input type="password" class="form-control" id="pwd" [(ngModel)]="user.password" name="password" #password="ngModel"
+                required></div>
+    </div>
+    <div [hidden]="password.valid || password.pristine" class="alert alert-danger col-sm-offset-6 col-sm-3">
+        Password is required
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-3 col-sm-offset-3  text-right"><label> Gender</label></div>
+        <div class="col-sm-3  "><input type="radio" name="radio" value="Male"><label>Male</label>
+            <input type="radio" name="radio" value="Female"><label>Female</label></div>
+    </div>
+    <div class="col-sm-3 col-sm-offset-6 text-right "><button type="submit" class="form-control btn btn-primary" (click)="onSubmit(user)" [disabled]="!heroForm.form.valid">
+        Register</button> <br>
+        <button type="button" class="form-control btn btn-default" ><a routerLink="/login" routerLinkActive="active">Login</a></button></div>
+</form>
+</div>
+<!--<br/>
+<br/>
+<br/>
+<div>
+<input type="text" [(ngModel)]="child">
+<input type="submit"[disabled]="!heroForm.form.valid" value ="submit" style="height:21px"> 
+<span (click)="onClick()">please click me</span>
+</div>-->
+<!--<nav>
+<a routerLink="/" routerLinkActive="active"></a>
+    <a routerLink="/login">Login</a>
+</nav>-->

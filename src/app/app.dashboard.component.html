@@ -1,0 +1,31 @@
+<div style="margin-left: -96px;">
+    <span>Emp Id:</span>
+    <input type="text" name="deti" [(ngModel)]='name'>
+    <h1>successfully login</h1>
+    <table class="table table-bordered" style="margin-top: 10px;">
+        <tbody>
+            <tr>
+                <th>productId</th>
+                <th>productName</th>
+                <th>productCode</th>
+                <th>releaseDate</th>
+                <th>description</th>
+                <th>price</th>
+                <th>starRating</th>
+                <th>Image</th>
+
+            </tr>
+            <tr *ngFor="let obj of products|filter:name">
+                <td>{{obj.productId}}</td>
+                <td>{{obj.productName | uppercase}}</td>
+                <td>{{obj.productCode}}</td>
+                <td>{{obj.releaseDate}}</td>
+                <td>{{obj.description}}</td>
+                <td>{{obj.price}}</td>
+                <td>{{obj.starRating}}</td>
+                  <td><img [src]="obj.imageUrl" style="width:20%; height:30% "></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
